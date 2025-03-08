@@ -2,3 +2,34 @@
 body{
     background-color: #fffde4;
 }
+
+.hero{
+    background-image: url(../img/giz2.jpg);
+}
+.floor{
+    color: #000;
+}
+
+.section{
+    color: #000000;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.menu{
+    background-color: #ffffff88;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    border-radius: 100px;
+    justify-content: space-between;
+    margin: 3%;
+    box-shadow: 0 4px 12px #00000088;
+
+}
+
+
