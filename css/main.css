@@ -1,35 +1,208 @@
 /* Place CSS styles here */
-body{
-    background-color: #fffde4;
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(255, 0, 221);
+    overflow: hidden;
 }
 
-.hero{
-    background-image: url(../img/giz2.jpg);
-}
-.floor{
-    color: #000;
-}
-
-.section{
-    color: #000000;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-size: 1.5rem;
-    padding-bottom: 1%;
-    padding-top: 1%;
+.absolute_image {
+    width: 100vw;
+    min-height: 100vh;
+    min-height: auto;
 }
 
-.menu{
-    background-color: #ffffff88;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    padding: 10px;
-    display: flex;
-    gap: 20px;
+.train_car {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 100;
+}
+
+.window {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.size {
+    width: 100%
+}
+
+.station {
+    margin-left: 37%;
+    padding-top: 260px;
+    transition: transform 0.5s ease;
+}
+
+
+p span{
+    font-family: Raleway Dots;
+    font-size: 250px;
+    color: rgb(44, 190, 44);
+    background-color: black;
+    padding:30px 1000px 30px 150px;
+
+}
+
+.welcome{
+    position: absolute;
+    z-index: 101;
+    margin-top: 300px;
+}
+
+.text{
+    font-family: Raleway Dots;
+    font-size: 180px;
+    color: rgb(44, 190, 44);
+    background-color: black;
     border-radius: 100px;
-    justify-content: space-between;
-    margin: 3%;
-    box-shadow: 0 4px 12px #00000088;
+    padding-inline: 0px;
+    margin-left: 2400px;
+    animation: fadein 5s;
+    animation-delay: 10s;
+    opacity: 0;
+}
 
+.text-2{
+    font-family: Raleway Dots;
+    font-size: 180px;
+    color: rgb(44, 190, 44);
+    background-color: black;
+    border-radius: 100px;
+    padding-inline: 0px;
+    margin-left: 2400px;
+    animation: fadeout 5s;
+    animation-delay: 15s;
+    opacity: 0;
+}
+
+.text-3{
+    font-family: Raleway Dots;
+    font-size: 180px;
+    color: rgb(44, 190, 44);
+    background-color: black;
+    border-radius: 100px;
+    padding-inline: 0px;
+    margin-left: 2400px;
+    animation: fadein 5s;
+    animation-delay: 25s;
+    opacity: 0;
+    padding:30px 400px 30px 150px;
+}
+
+.text-4{
+    font-family: Raleway Dots;
+    font-size: 180px;
+    color: rgb(44, 190, 44);
+    background-color: black;
+    border-radius: 100px;
+    padding-inline: 0px;
+    margin-left: 2400px;
+    animation: fadeout 5s;
+    animation-delay: 30s;
+    opacity: 0;
+    padding:30px 400px 30px 150px;
 }
 
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+.luggage{
+    position: absolute;
+    z-index: 102;
+    margin-top: 2000px;
+    margin-left:500px
+}
+
+.luggage-2{
+    position: absolute;
+    z-index: 102;
+    margin-top: 2000px;
+    margin-left:1500px
+}
+
+.luggage-3{
+    position: absolute;
+    z-index: 102;
+    margin-top: 2000px;
+    margin-left:4000px
+}
+
+.luggage-4{
+    position: absolute;
+    z-index: 102;
+    margin-top: 2000px;
+    margin-left:5200px
+}
+
+
+
+@media (max-width: 768px) {
+   body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+   
+   .absolute_image {
+    width: 100vw;
+    min-height: 100vw;
+}
+
+    .train_car {
+        width: 176vh;;
+        height: auto;
+        position: absolute;
+        z-index: 100;
+        margin-top: -13px;
+        margin-right: auto;
+        margin-left: auto;
+      
+    }
+    
+    .station {
+        margin-left: 0;
+        padding-top: 0;
+    }
+    
+    
+    p span{
+        font-family: Raleway Dots;
+        font-size: 50px;
+        color: rgb(44, 190, 44);
+        background-color: black;
+        padding:0px 0px 0px 0px;
+    }
+
+    .window {
+        width: 280%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 90px;
+        margin-left: 100px;
+    }
+    
+    .size {
+        width: 100%
+    }
+}
